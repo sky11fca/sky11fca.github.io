@@ -1,7 +1,14 @@
 <?php
-    $email = $_POST['email'] ?? '';
-    $password = $_POST['password'] ?? '';
-
+    if($_SERVER['REQUEST_METHOD'] == 'POST') {
+        // Process the form submission
+        $email = $_POST['email'] ?? '';
+        $password = $_POST['password'] ?? '';
+    } else {
+        // Default values or handle the case when the form is not submitted
+        $email = '';
+        $password = '';
+        http_response_code(405);
+    }
 ?>
 
 <!DOCTYPE html>
