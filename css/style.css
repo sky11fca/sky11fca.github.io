@@ -39,10 +39,9 @@ LEARN TO USE MEDIA QUERRIES
     
     nav{
         padding-top: 20px;
-        /* justify-content: space-between; */
-    
     
     }
+
     header{
         text-align: center;
     }
@@ -72,7 +71,21 @@ LEARN TO USE MEDIA QUERRIES
     .Navigation{
         display: flex;
     }
-    
+
+    .table2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+
+    .cell2{
+        border: 1px, solid, #fff;
+    }
+
+    .cell2 img{
+        max-width: 100%;
+        height: 60%;
+    }
     
     
     
@@ -100,7 +113,7 @@ LEARN TO USE MEDIA QUERRIES
     
     
     main{
-        display: flex;
+        display: inline;
     }
     
     main.infobox{
@@ -264,9 +277,25 @@ a:hover{
     
 }
 
+.table2{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+    align-items: stretch;
+}
+
+.cell2{
+    border: 1px, solid, #fff;
+}
+
+.cell2 img{
+    max-width: 100%;
+    height: 60%;
+}
+
 
 main{
-    display: flex;
+    display: inline;
 }
 
 main.infobox{
@@ -274,6 +303,7 @@ main.infobox{
 }
 
 main.index{
+    display: flex;
     justify-content: space-between;
 }
 
