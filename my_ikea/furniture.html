@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pub/css/style.css">
+    <title>My Ikea</title>
+</head>
+<body>
+    <nav id='menu'>
+  <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+  <script src="./pub/js/navbar.js"></script>
+  <ul>
+    <li><a href='./furniture.html'>Furniture</a></li>
+    <li><a href='./bathroom.html'>Bathroom</a></li>
+    <li><a href='./garden.html'>Gardening</a></li>
+    <li><a href='./electricity.html'>Electricity</a></li>
+  </ul>
+</nav>
+
+<main>
+    <div id="furniture-grid">
+    </div>
+    <script src="./pub/js/get-furniture.js"></script>
+</main>
+
+</body>
+</html>
