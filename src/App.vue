@@ -1,47 +1,86 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+  <div class="app-container">
+    <!-- Aero-Blade Navigation -->
+    <header class="aero-blade">
+      <div class="nav-content">
+        <h1 class="logo">Mr. Bogdanovich</h1>
+        <nav class="desktop-nav">
+          <RouterLink to="/" class="nav-link">Home</RouterLink>
+          <RouterLink to="/projects" class="nav-link">Projects</RouterLink>
+          <RouterLink to="/fun" class="nav-link">Fun Zone</RouterLink>
+          <RouterLink to="/achievements" class="nav-link">Achievements</RouterLink>
+          <RouterLink to="/about" class="nav-link">About</RouterLink>
+        </nav>
+      </div>
+    </header>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+    <main class="main-content">
+      <RouterView />
+    </main>
+  </div>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
+.app-container {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* The "Aero-Blade" Header */
+.aero-blade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: color-mix(in srgb, var(--surface) 80%, transparent);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-top: 2px solid var(--primary);
+  padding: 1rem 2.5rem;
+}
+
+.nav-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-  display: block;
-  margin: 0 auto 2rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--on-surface);
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
+.desktop-nav {
+  display: flex;
+  gap: 2rem;
+}
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
+.nav-link {
+  color: var(--on-surface-variant);
+  text-decoration: none;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+  transition: color 0.2s;
+}
 
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+.nav-link:hover,
+.router-link-active {
+  color: var(--primary);
+}
+
+.main-content {
+  padding-top: 80px; /* offset for fixed header */
+}
+
+@media (max-width: 768px) {
+  .desktop-nav { display: none; }
 }
 </style>
