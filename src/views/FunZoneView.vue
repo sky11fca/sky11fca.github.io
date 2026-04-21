@@ -4,7 +4,7 @@
 <template>
   <div>
     <section class="content-section surface-container-low" style="min-height: 80vh;">
-      <h3 class="display-md mb-10 text-on-surface" style="text-align: center">Coding Projects</h3>
+      <h3 class="display-md mb-10 text-on-surface" style="text-align: center">The Fun Zone</h3>
 
       <div class="flow-list">
 
