@@ -21,24 +21,6 @@
         </div>
       </div>
     </section>
-
-<!--    &lt;!&ndash; Contact Form Example &ndash;&gt;
-    <section class="content-section surface-container-low">
-      <div class="glass glass-card ambient-shadow contact-card">
-        <h3 class="display-md mb-6 text-on-surface">Get in Touch</h3>
-        <form class="contact-form">
-          <div class="form-group">
-            <label class="label-md text-primary">Name</label>
-            <input type="text" class="input-well" placeholder="Jane Doe" />
-          </div>
-          <div class="form-group mt-6">
-            <label class="label-md text-primary">Message</label>
-            <textarea class="input-well" rows="4" placeholder="Hello..."></textarea>
-          </div>
-          <button type="submit" class="btn-primary mt-8">Send Message</button>
-        </form>
-      </div>
-    </section>-->
   </div>
 </template>
 
