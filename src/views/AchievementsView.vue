@@ -10,15 +10,8 @@
        <div class="flow-list">
          <div class="list-item">
            <div class="item-content">
-             <h4 class="text-on-surface">Top 100 in Global Dev Marathon</h4>
-             <p class="text-on-surface-variant mt-2">2023 - Ranked among the top out of 50,000 participants worldwide, focusing on frontend architecture and fluid animations.</p>
-           </div>
-         </div>
-
-         <div class="list-item">
-           <div class="item-content">
-             <h4 class="text-on-surface">Best UX/UI Design Award</h4>
-             <p class="text-on-surface-variant mt-2">2022 - Recognized for implementing cutting-edge design principles that prioritize depth, light refraction, and user delight.</p>
+             <h4 class="text-on-surface">TBA</h4>
+             <p class="text-on-surface-variant mt-2">TBD</p>
            </div>
          </div>
        </div>
@@ -68,11 +61,6 @@
   font-size: 1.25rem;
   margin-bottom: 0.25rem;
   font-weight: 600;
-}
-
-.accent-icon {
-  color: var(--tertiary);
-  font-size: 2rem;
 }
 
 @media (max-width: 768px) {

@@ -3,25 +3,27 @@
 
 <template>
   <div>
-    <!-- Fun Zone -->
-    <!-- TODO! Add the fun projects here. Rewrite like in the project page -->
-    <section class="content-section" style="min-height: 80vh; padding-top: 8rem;">
-       <h3 class="display-md mb-10 text-on-surface text-center">Fun Zone</h3>
+    <section class="content-section surface-container-low" style="min-height: 80vh;">
+      <h3 class="display-md mb-10 text-on-surface" style="text-align: center">Coding Projects</h3>
 
-       <div class="glass glass-card ambient-shadow" style="margin: 0 auto;">
-         <h4 class="text-on-surface mb-6 text-xl">Interactive Playground</h4>
-         <p class="body-text text-on-surface-variant mb-8">
-           Explore the physics of the Digital Diaphane design system. Hover over the elements to see the liquid finish and soft lifts in action.
-         </p>
+      <div class="flow-list">
+        <a href="https://github.com/sky11fca/Archlinux_dotfiles_ricing">
+          <div class="list-item">
+            <div class="item-content">
+              <h4 class="text-on-surface">Arch Linux dotfiles</h4>
+              <p class="text-on-surface-variant mt-2">I use Arch BTW :3</p>
+            </div>
+          </div>
+        </a>
 
-         <div class="flex-wrap-gap">
-           <div class="input-well text-center flex-1">
-              <p class="text-on-surface-variant" style="font-family: 'Inter', sans-serif;">Recessed Well Demo</p>
-           </div>
-           <button class="btn-secondary flex-1">Glass Orb Demo</button>
-           <button class="btn-primary flex-1">Primary Orb Demo</button>
-         </div>
-       </div>
+        <div class="list-item">
+          <div class="item-content">
+            <h4 class="text-on-surface">This website</h4>
+            <p class="text-on-surface-variant mt-2">Yeah! The one you are viewing it</p>
+          </div>
+        </div>
+
+      </div>
     </section>
   </div>
 </template>
@@ -36,37 +38,43 @@
   line-height: 1.2;
 }
 
-.text-center { text-align: center; }
-.text-xl { font-size: 1.5rem; font-weight: 600; }
-.mb-6 { margin-bottom: 1.5rem; }
-.mb-8 { margin-bottom: 2rem; }
 .mb-10 { margin-bottom: 2.5rem; }
+.mt-2 { margin-top: 0.5rem; }
 
-.body-text {
-  font-size: 1.125rem;
-  line-height: 1.6;
-}
-
-.glass-card {
-  padding: 3rem;
-  border-radius: var(--rounded-xl);
+/* Flow State List */
+.flow-list {
   max-width: 800px;
-  /* Ghost border fallback */
-  border: 1px solid color-mix(in srgb, var(--outline-variant) 15%, transparent);
-}
-
-.flex-wrap-gap {
+  margin: 0 auto;
   display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 2rem; /* Vertical White Space (scale 8) */
 }
 
-.flex-1 {
-  flex: 1;
-  min-width: 200px;
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: var(--rounded-md);
+  transition: background-color 0.3s, border-radius 0.3s;
+  cursor: pointer;
+  background-color: transparent;
 }
+
+.list-item:hover {
+  background-color: var(--surface);
+  border-radius: 0.5rem;
+}
+
+.list-item h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
 
 @media (max-width: 768px) {
   .display-md { font-size: 2rem; }
+  .list-item { flex-direction: column; align-items: flex-start; gap: 1rem; }
 }
 </style>

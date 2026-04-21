@@ -18,16 +18,6 @@
 
 <!--        This should be a photo of me-->
 
-<!--        <div class="visual-stack glass rounded-xl ambient-shadow">
-          <div class="stack-layer surface-container-highest">
-             <span class="text-on-surface" style="font-weight: 600;">Layer 1: Structural Foundation</span>
-             <p class="mt-4 text-on-surface-variant text-sm">Base structural plane acting as the root anchor.</p>
-          </div>
-          <div class="stack-layer surface-container-low mt-4">
-             <span class="text-on-surface" style="font-weight: 600;">Layer 2: Soft Lift</span>
-             <p class="mt-4 text-on-surface-variant text-sm">Secondary elevation using tonal shifts to mimic ambient light interactions.</p>
-          </div>
-        </div>-->
       </div>
     </section>
   </div>
@@ -48,9 +38,6 @@
   max-width: 600px;
 }
 
-.text-sm { font-size: 0.875rem; }
-.mt-4 { margin-top: 1rem; }
-.mt-6 { margin-top: 1.5rem; }
 
 /* About Grid */
 .about-grid {
@@ -62,17 +49,6 @@
   align-items: center;
 }
 
-.visual-stack {
-  padding: 2rem;
-  border-radius: var(--rounded-xl);
-  /* Tonal layering */
-}
-
-.stack-layer {
-  padding: 1.5rem;
-  border-radius: var(--rounded-md);
-  font-family: 'Inter', sans-serif;
-}
 
 @media (max-width: 768px) {
   .display-md { font-size: 2rem; }
