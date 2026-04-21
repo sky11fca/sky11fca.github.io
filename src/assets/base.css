@@ -77,6 +77,11 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.02em;
 }
 
+a{
+  text-decoration: none;
+  color: var(--on-surface);
+}
+
 /* Base utility classes from design system */
 .surface { background-color: var(--surface); }
 .surface-container-low { background-color: var(--surface-container-low); }
