@@ -7,14 +7,13 @@
       <h3 class="display-md mb-10 text-on-surface" style="text-align: center">Coding Projects</h3>
 
       <div class="flow-list">
-        <a href="https://github.com/sky11fca/Archlinux_dotfiles_ricing">
+
           <div class="list-item">
             <div class="item-content">
-              <h4 class="text-on-surface">Arch Linux dotfiles</h4>
+              <a href="https://github.com/sky11fca/Archlinux_dotfiles_ricing"><h4 class="text-on-surface">Arch Linux dotfiles</h4></a>
               <p class="text-on-surface-variant mt-2">I use Arch BTW :3</p>
             </div>
           </div>
-        </a>
 
         <div class="list-item">
           <div class="item-content">
