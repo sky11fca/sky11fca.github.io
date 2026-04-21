@@ -10,15 +10,15 @@
 
           <div class="list-item">
             <div class="item-content">
-              <a href="https://github.com/sky11fca/Archlinux_dotfiles_ricing"><h4 class="text-on-surface">Arch Linux dotfiles</h4></a>
+              <a href="https://github.com/sky11fca/Archlinux_dotfiles_ricing" style="text-decoration: none;"><h4 class="text-on-surface">Arch Linux dotfiles</h4></a>
               <p class="text-on-surface-variant mt-2">I use Arch BTW :3</p>
             </div>
           </div>
 
         <div class="list-item">
           <div class="item-content">
-            <h4 class="text-on-surface">This website</h4>
-            <p class="text-on-surface-variant mt-2">Yeah! The one you are viewing it</p>
+            <router-link to="/" style="text-decoration: none;"><h4 class="text-on-surface">This website</h4></router-link>
+            <p class="text-on-surface-variant mt-2">Yeah! The one you are viewing.</p>
           </div>
         </div>
 
